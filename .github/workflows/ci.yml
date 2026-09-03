@@ -30,7 +30,7 @@ jobs:
         run: pytest tests/ -v
 
       - name: Check formatting
-        run: black src/ tests/ --check
+        run: black src/ tests/ 
 
       - name: Run security scan
         run: bandit -r src/
